@@ -3,17 +3,31 @@
 <head>
   <meta charset="utf-8">
   
-  <title>听雨楼</title>
+  <title>HashMap分析 | 听雨楼</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="听雨楼">
-<meta property="og:url" content="http://goafter.github.io/index.html">
+  <meta name="description" content="HashMap概述
+
+写该文章主要是为了练习一下Markdown的语法。顺便学习一下HashMap的东西.
+
+HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。HashMap的数据结构在Java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HashMap分析">
+<meta property="og:url" content="http://goafter.github.io/2015/07/19/HashMap/index.html">
 <meta property="og:site_name" content="听雨楼">
-<meta property="og:description">
+<meta property="og:description" content="HashMap概述
+
+写该文章主要是为了练习一下Markdown的语法。顺便学习一下HashMap的东西.
+
+HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。HashMap的数据结构在Java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构">
+<meta property="og:image" content="http://7xkemt.com1.z0.glb.clouddn.com/HashMap.jpg">
+<meta property="og:updated_time" content="2015-07-19T14:03:05.583Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="听雨楼">
-<meta name="twitter:description">
+<meta name="twitter:title" content="HashMap分析">
+<meta name="twitter:description" content="HashMap概述
+
+写该文章主要是为了练习一下Markdown的语法。顺便学习一下HashMap的东西.
+
+HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。HashMap的数据结构在Java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构">
   
     <link rel="alternative" href="/atom.xml" title="听雨楼" type="application/atom+xml">
   
@@ -165,9 +179,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-HashMap" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-HashMap" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/07/19/HashMap/" class="article-date">
@@ -183,12 +195,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/19/HashMap/">HashMap分析</a>
+    <h1 class="article-title" itemprop="name">
+      HashMap分析
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -352,140 +371,62 @@ while (capacity &lt; initialCapacity)
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/07/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="HashMap" data-title="HashMap分析" data-url="http://goafter.github.io/2015/07/19/HashMap/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/15/hello-world/" class="article-date">
-  	<time datetime="2015-07-15T10:14:17.435Z" itemprop="datePublished">2015-07-15</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/07/15/hello-world/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-this-is-test" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/13/this-is-test/" class="article-date">
-  	<time datetime="2015-07-13T03:43:27.000Z" itemprop="datePublished">2015-07-13</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/13/this-is-test/">思念无果,转瞬滂沱(有感)</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <pre><code>你说，分离未必是悲剧。
-</code></pre><p>　　我说，悲剧只在于，即使离开，依然爱你<br>    候鸟穿越暮霭的时候，我在这里听见阵阵的松涛唱寂寞的歌谣。<br>    要怎么样，让我的思念飞奔几千公里到你的你的心里？<br>    你在的那里，又有怎样的回忆？</p>
-<p>　　 在这个没有阳光的下午，我停泊在这里。<br>    这里的雾好浓，把整个城市涂成了一张惨白的脸，阴郁而萧索。<br>    我决定开始想你，让那些泛滥了的思念辗转。我只是想你，你不用着急。<br>    从哪儿开始想起呢，你等等，我的记忆好象有些错乱。<br>    是那个暮色苍茫的晚秋吧？<br>    我们一起看那个火红的图腾隐没在层层叠叠的云里，以一种缓慢的依恋的姿态告别。<br>    我恍惚间看见了我们日后的分离和苍老。<br>    你转过身问我，八十岁的我们，还能不能一起，在这里，看夕阳。<br>    我低头，泪流成河。<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/07/13/this-is-test/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -509,8 +450,8 @@ while (capacity &lt; initialCapacity)
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
