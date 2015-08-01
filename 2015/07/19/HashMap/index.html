@@ -21,7 +21,7 @@ HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有�
 HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。HashMap的数据结构在Java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构">
 <meta property="og:image" content="http://7xkemt.com1.z0.glb.clouddn.com/HashMap.jpg">
 <meta property="og:image" content="http://7xkemt.com1.z0.glb.clouddn.com/HashMapPUT.jpg">
-<meta property="og:updated_time" content="2015-07-19T14:58:09.150Z">
+<meta property="og:updated_time" content="2015-08-01T11:02:50.092Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HashMap分析">
 <meta name="twitter:description" content="HashMap概述
@@ -120,7 +120,7 @@ HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有�
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						
+						<a href="/tags/HashMap/" style="font-size: 10px;">HashMap</a> <a href="/tags/集合/" style="font-size: 10px;">集合</a>
 					</div>
 				</section>
 				
@@ -205,6 +205,10 @@ HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有�
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HashMap/">HashMap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/集合/">集合</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -342,10 +346,19 @@ while (capacity &lt; initialCapacity)
 <blockquote>
 <p>HashMap还有一个很重要的扩容问题 这个我大参考了<a href="http://coolshell.cn/articles/9606.html" target="_blank" rel="external">疫苗：Java HashMap的死循环</a>该文章很详细介绍了HashMap的resize（rehash） 在此感谢。学到不少</p>
 </blockquote>
-<p>如果我们已经预知HashMap中元素的个数，那么预设元素的个数能够有效的提高HashMap的性能。<br>HashMap的性能参数<br>HashMap 包含如下几个构造器：<br>HashMap()：构建一个初始容量为 16，负载因子为 0.75 的 HashMap。</p>
-<p>HashMap(int initialCapacity)：构建一个初始容量为 initialCapacity，负载因子为 0.75 的 HashMap。</p>
-<p>HashMap(int initialCapacity, float loadFactor)：以指定初始容量、指定的负载因子创建一个 HashMap。</p>
-<p>HashMap的基础构造器HashMap(int initialCapacity, float loadFactor)带有两个参数，它们是初始容量initialCapacity和负载因子loadFactor。</p>
+<p>如果我们已经预知HashMap中元素的个数，那么预设元素的个数能够有效的提高HashMap的性能。<br>HashMap的性能参数<br>HashMap 包含如下几个构造器：</p>
+<blockquote>
+<ul>
+<li><p>HashMap()：构建一个初始容量为 16，负载因子为 0.75 的 HashMap。</p>
+</li>
+<li><p>HashMap(int initialCapacity)：构建一个初始容量为 initialCapacity，负载因子为 0.75 的 HashMap。</p>
+</li>
+<li><p>HashMap(int initialCapacity, float loadFactor)：以指定初始容量、指定的负载因子创建一个 HashMap。</p>
+</li>
+<li><p>HashMap的基础构造器HashMap(int initialCapacity, float loadFactor)带有两个参数，它们是初始容量initialCapacity和负载因子loadFactor。</p>
+</li>
+</ul>
+</blockquote>
 <p>HashMap的实现中，通过threshold字段来判断HashMap的最大容量：</p>
 <pre><code>threshold = <span class="list">(<span class="keyword">int</span>)</span><span class="list">(<span class="keyword">capacity</span> <span class="variable">* loadFactor);</span></span>
 </code></pre><p><strong>需要注意的时：在迭代器里除了迭代器的remove不要做修改操作！<br>在用LinkHashMap时你甚至在get时该处都会报出异常。原因以后再分析一下LinkHashMap</strong></p>
